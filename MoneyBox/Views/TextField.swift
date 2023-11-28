@@ -26,6 +26,21 @@ class TextField: UITextField {
         self.returnKeyType = .done
         self.autocorrectionType = .no
         self.autocapitalizationType = .none
+        
+        switch fieldType {
+        case .email:
+            self.placeholder = "Email"
+            self.keyboardType = .emailAddress
+            self.textContentType = .emailAddress
+            
+        case .password:
+            self.placeholder = "Password"
+            self.textContentType = .oneTimeCode
+            self.isSecureTextEntry = true
+        }
+        
+        self.leftViewMode = .always
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.frame.size.height))
     }
     
     required init?(coder: NSCoder) {

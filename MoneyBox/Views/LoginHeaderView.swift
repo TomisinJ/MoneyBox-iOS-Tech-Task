@@ -35,7 +35,6 @@ class LoginHeaderView: UIView {
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        self.titleLabel.topAnchor.constraint(equalTo: self.layoutMarginsGuide.topAnchor, constant: 100).isActive = true
         self.titleLabel.centerXAnchor.constraint(equalTo: self.layoutMarginsGuide.centerXAnchor).isActive = true
         self.titleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
         self.titleLabel.heightAnchor.constraint(equalTo: titleLabel.widthAnchor).isActive = true
