@@ -11,7 +11,7 @@ class LoginHeaderView: UIView {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .label
+        label.textColor = UIColor(named: "AccentColor")
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 20, weight: .bold)
         label.text = "Login Text"
