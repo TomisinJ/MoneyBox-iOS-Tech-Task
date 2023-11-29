@@ -47,6 +47,18 @@ public struct Account: Codable {
     }
 }
 
+extension Account {
+    
+    public static func getMockArray() -> [Account] {
+        return [
+            Account(type: "ISA", name: "Barclays", deepLinkIdentifier: nil, wrapper: nil, milestone: nil, hasCollections: nil),
+            Account(type: "LISA", name: "Natwest", deepLinkIdentifier: nil, wrapper: nil, milestone: nil, hasCollections: nil),
+            Account(type: "Cash", name: "Santander", deepLinkIdentifier: nil, wrapper: nil, milestone: nil, hasCollections: nil)
+        ]
+    }
+    
+}
+
 // MARK: - Milestone
 public struct Milestone: Codable {
     public let initialStage: String?

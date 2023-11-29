@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import Networking
 
 class AccountSummaryView: UIView {
+    
+    private let accounts: [Account] = Account.getMockArray()
+//    private(set) var account: Account!
     
     private let accountName: UILabel = {
         let label = UILabel()
@@ -36,10 +40,10 @@ class AccountSummaryView: UIView {
         return label
     }()
     
-    init(accountName: String, planValue: Int, moneyboxAmount: Int) {
+    init() {
         super.init(frame: .zero)
         
-        self.accountName.text = accountName
+        self.accountName.text = accounts[1].name
         
         self.backgroundColor = UIColor(named: "AccentColor")
         self.layer.cornerRadius = 10
