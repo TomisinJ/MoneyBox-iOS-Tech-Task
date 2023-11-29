@@ -66,10 +66,11 @@ class LoginViewController: UIViewController {
     
     @objc private func didTapLogin() {
         print("login tapped")
+//
         let vc = AllAccountsViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
-        
+
 //        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
