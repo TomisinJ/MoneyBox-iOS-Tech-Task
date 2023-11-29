@@ -62,18 +62,21 @@ class AccountSummaryView: UIView {
         moneyboxAmount.translatesAutoresizingMaskIntoConstraints = false
         
         self.accountName.centerXAnchor.constraint(equalTo: self.layoutMarginsGuide.centerXAnchor).isActive = true
+        self.accountName.leadingAnchor.constraint(equalTo: self.layoutMarginsGuide.leadingAnchor).isActive = true
         self.accountName.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        self.accountName.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        self.accountName.heightAnchor.constraint(equalToConstant: 25).isActive = true
         
         self.planValueLabel.topAnchor.constraint(equalTo: accountName.bottomAnchor, constant: 10).isActive = true
         self.planValueLabel.centerXAnchor.constraint(equalTo: self.layoutMarginsGuide.centerXAnchor).isActive = true
+        self.planValueLabel.leadingAnchor.constraint(equalTo: self.layoutMarginsGuide.leadingAnchor).isActive = true
         self.planValueLabel.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        self.planValueLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        self.planValueLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
         
         self.moneyboxAmount.topAnchor.constraint(equalTo: planValueLabel.bottomAnchor, constant: 10).isActive = true
         self.moneyboxAmount.centerXAnchor.constraint(equalTo: self.layoutMarginsGuide.centerXAnchor).isActive = true
+        self.moneyboxAmount.leadingAnchor.constraint(equalTo: self.layoutMarginsGuide.leadingAnchor).isActive = true
         self.moneyboxAmount.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        self.moneyboxAmount.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        self.moneyboxAmount.heightAnchor.constraint(equalToConstant: 25).isActive = true
 
     }
     
